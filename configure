@@ -29,7 +29,7 @@ lb config \
  --distribution sid \
  --gzip-options '-9 --rsyncable' \
  --iso-publisher 'Blue Systems; http://www.blue-systems.com/;' \
- --iso-volume 'Netrunner Cloud unstable $(date +%Y%m%d-%H:%M)' \
+ --iso-volume 'Netrunner Cloud $(date +%Y%m%d-%H:%M)' \
  --linux-flavours none \
  --linux-packages none \
  --mode debian \
