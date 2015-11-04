@@ -1,0 +1,6 @@
+deb http://pangea-data.s3.amazonaws.com/dci/qt5/debian sid main
+deb http://pangea-data.s3.amazonaws.com/dci/frameworks/debian sid main
+deb http://pangea-data.s3.amazonaws.com/dci/plasma/debian sid main
+deb http://pangea-data.s3.amazonaws.com/dci/extras/debian sid main
+deb http://pangea-data.s3.amazonaws.com/dci/netrunner/debian sid main
+deb http://pangea-data.s3.amazonaws.com/dci/plasmazilla/debian sid main

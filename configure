@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# (C) 2012-2015 Fathi Boudra <fathi.boudra@linaro.org>
+# (C) 2015 Rohan Garg <rohan@garg.io>
+
+# Create configuration for live-build.
+
+# You need live-build package installed.
+
+set -e
+
+echo "I: create configuration"
+export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
+lb config \
+ --apt-indices none \
+ --apt-secure false \
+ --architectures armhf \
+ --archive-areas 'main contrib non-free' \
+ --backports false \
+ --binary-filesystem ext4 \
+ --binary-images tar \
+ --bootappend-live "hostname=live-pc username=live" \
+ --bootstrap-qemu-arch armhf \
+ --bootstrap-qemu-static /usr/bin/qemu-arm-static \
+ --cache false \
+ --chroot-filesystem none \
+ --compression gzip \
+ --debootstrap-options "--variant=minbase" \
+ --distribution sid \
+ --gzip-options '-9 --rsyncable' \
+ --iso-publisher 'Blue Systems; http://www.blue-systems.com/;' \
+ --iso-volume 'Netrunner Cloud unstable $(date +%Y%m%d-%H:%M)' \
+ --linux-flavours none \
+ --linux-packages none \
+ --mode debian \
+ --security false \
+ --system normal \
+ --updates false
+
+echo "I: copy customization"
+test -d customization && cp -rf customization/* config/
+
+echo "I: done"
