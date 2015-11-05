@@ -35,6 +35,7 @@ lb config \
  --mode debian \
  --security false \
  --system normal \
+ --config standard \
  --updates false
 
 echo "I: copy customization"
