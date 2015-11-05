@@ -40,7 +40,8 @@ lb config \
  --mode debian \
  --security false \
  --system normal \
- --updates false
+ --updates false \
+ --memtest none
 
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
