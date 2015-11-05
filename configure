@@ -11,6 +11,11 @@ set -e
 
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
+
+# Manually copy over files since --config does not work when we are
+# already a git repo
+cp -aR /usr/share/live/images/standard/* .
+
 lb config \
  --apt-indices none \
  --apt-secure false \
@@ -35,7 +40,6 @@ lb config \
  --mode debian \
  --security false \
  --system normal \
- --config standard \
  --updates false
 
 echo "I: copy customization"
