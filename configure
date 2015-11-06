@@ -12,13 +12,7 @@ set -e
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
-# Manually copy over files since --config does not work when we are
-# already a git repo
-cp -aR /usr/share/live/images/standard/* .
-
 lb config \
- --apt-indices none \
- --apt-secure false \
  --architectures armhf \
  --archive-areas 'main contrib non-free' \
  --backports false \
@@ -27,14 +21,8 @@ lb config \
  --bootappend-live "hostname=live-pc username=live" \
  --bootstrap-qemu-arch armhf \
  --bootstrap-qemu-static /usr/bin/qemu-arm-static \
- --cache false \
- --chroot-filesystem none \
  --compression gzip \
- --debootstrap-options "--variant=minbase" \
  --distribution sid \
- --gzip-options '-9 --rsyncable' \
- --iso-publisher 'Blue Systems; http://www.blue-systems.com/;' \
- --iso-volume 'Netrunner Cloud $(date +%Y%m%d-%H:%M)' \
  --linux-flavours none \
  --linux-packages none \
  --mode debian \
@@ -43,7 +31,6 @@ lb config \
  --debian-installer false \
  --debian-installer-gui false \
  --source false
-
 
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
