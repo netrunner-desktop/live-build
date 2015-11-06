@@ -39,9 +39,11 @@ lb config \
  --linux-packages none \
  --mode debian \
  --security false \
- --system normal \
  --updates false \
- --memtest none
+ --debian-installer false \
+ --debian-installer-gui false \
+ --source false
+
 
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
