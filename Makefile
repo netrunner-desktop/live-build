@@ -11,7 +11,7 @@ TIMESTAMP=`date "+%y%m%d%H%M%S"`
 LOGFILE=logfile-$(TIMESTAMP)
 
 all:
-	set -e; sudo lb build 2>&1 | tee $(LOGFILE)
+	set -e; lb build 2>&1 | tee $(LOGFILE)
 
 clean:
-	sudo lb clean --purge
+	lb clean --purge
