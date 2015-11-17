@@ -17,6 +17,7 @@ lb config \
  --archive-areas 'main contrib non-free' \
  --backports false \
  --binary-filesystem ext4 \
+ --chroot-filesystem none \
  --binary-images tar \
  --bootappend-live "hostname=live-pc username=live" \
  --bootstrap-qemu-arch armhf \
