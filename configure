@@ -15,7 +15,7 @@ export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 lb config \
  --architectures armhf \
  --archive-areas 'main contrib non-free' \
- -m http://mirrors.digitalocean.com/debian/ \
+ -m http://httpredir.debian.net/debian/ \
  --backports false \
  --binary-filesystem ext4 \
  --chroot-filesystem none \
