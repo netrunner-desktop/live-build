@@ -4,5 +4,5 @@ deb http://pangea-data.s3.amazonaws.com/dci/plasma/debian sid main
 deb http://pangea-data.s3.amazonaws.com/dci/extras/debian sid main
 deb http://pangea-data.s3.amazonaws.com/dci/netrunner/debian sid main
 deb http://pangea-data.s3.amazonaws.com/dci/plasmazilla/debian sid main
-deb http://pangea-data.s3.amazonaws.com/dci/odroid/debian sid main
+deb http://pangea-data.s3.amazonaws.com/dci/yacy/debian sid main
 
