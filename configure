@@ -32,6 +32,7 @@ lb config \
  --debian-installer false \
  --debian-installer-gui false \
  --apt-source-archives false \
+ --apt-options "APT::Acquire::Retries=20" \
  --source false
 
 echo "I: copy customization"
