@@ -31,6 +31,7 @@ lb config \
  --updates false \
  --debian-installer false \
  --debian-installer-gui false \
+ --apt-source-archives false \
  --source false
 
 echo "I: copy customization"
