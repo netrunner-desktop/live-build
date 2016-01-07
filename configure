@@ -13,7 +13,6 @@ echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
 lb config \
- --apt aptitude \
  --architectures armhf \
  --archive-areas 'main contrib non-free' \
  --backports false \
@@ -33,7 +32,7 @@ lb config \
  --debian-installer false \
  --debian-installer-gui false \
  --apt-source-archives false \
- --aptitude-options "-o Acquire::Retries=20 --assume-yes" \
+ --apt-options "-o Acquire::Retries=20 --assume-yes" \
  --source false
 
 echo "I: copy customization"
