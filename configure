@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # (C) 2012-2015 Fathi Boudra <fathi.boudra@linaro.org>
 # (C) 2015 Rohan Garg <rohan@garg.io>
@@ -12,28 +12,29 @@ set -e
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
+arch=$(dpkg-architecture -qDEB_HOST_ARCH)
+
+if [ "$arch" == "amd64" ]; then
+    FMT="iso-hybrid"
+else
+    FMT="tar"
+    OTHER_OPTS="--linux-flavours none --linux-packages none"
+fi
+
+echo "I: Format is $FMT"
+
 lb config \
- --architectures armhf \
  --archive-areas 'main contrib non-free' \
- --backports false \
- --binary-filesystem ext4 \
- --chroot-filesystem none \
- --binary-images tar \
- --bootappend-live "hostname=live-pc username=live" \
- --bootstrap-qemu-arch armhf \
- --bootstrap-qemu-static /usr/bin/qemu-arm-static \
- --compression gzip \
- --distribution sid \
- --linux-flavours none \
- --linux-packages none \
+ --backports true \
+ --distribution stable \
+ --binary-images $FMT \
+ --bootappend-live "boot=live hostname=live-pc username=live" \
  --mode debian \
  --security false \
  --updates false \
- --debian-installer false \
- --debian-installer-gui false \
  --apt-source-archives false \
- --apt-options "-o Acquire::Retries=20 --assume-yes" \
- --source false
+ --source false \
+ $OTHER_OPTS
 
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
