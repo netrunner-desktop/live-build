@@ -8,6 +8,7 @@
 # You need live-build package installed.
 
 set -e
+set -x
 
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
