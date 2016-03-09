@@ -72,7 +72,7 @@ EOF
 
 	fi
 
-	chmod a+x "/home/${LIVE_USERNAME}/Desktop"
+	chmod a+x "/home/${LIVE_USERNAME}/Desktop/calamares.desktop"
 	chown -R ${LIVE_USERNAME}:${LIVE_USERNAME}  "/home/${LIVE_USERNAME}/Desktop"
 	# Creating state file
 	touch /var/lib/live/config/calamares
