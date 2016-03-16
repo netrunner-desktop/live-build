@@ -1,12 +1,2 @@
 phonon-backend-gstreamer
 phonon4qt5-backend-gstreamer
-
-#if ARCHITECTURES armhf
-netrunner-core-arm
-calamares-post
-#endif
-
-#if ARCHITECTURES amd64
-netrunner-core
-calamares
-#endif
