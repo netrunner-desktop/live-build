@@ -30,9 +30,7 @@ Cmdline ()
 Init ()
 {
 	# Checking if package is installed or already configured
-	if [ ! -e /var/lib/dpkg/info/calamares.list ] || \
-	   [ -e /var/lib/live/config/calamares ] || \
-		 [ ! -e /usr/bin/calamares ]
+	if  [ ! -e /usr/bin/calamares ]
 	then
 		exit 0
 	fi
