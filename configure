@@ -22,7 +22,7 @@ if [ "$arch" == "amd64" ]; then
     echo "calamares" >> $PKGLIST
 else
     FMT="tar"
-    OTHER_OPTS="--linux-flavours none --linux-packages none"
+    OTHER_OPTS="--linux-flavours none --linux-packages none --chroot-filesystem none --binary-filesystem ext4"
     echo "netrunner-core-arm" >> $PKGLIST
     echo "calamares-post" >> $PKGLIST
 fi
