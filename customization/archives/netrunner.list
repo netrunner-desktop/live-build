@@ -4,4 +4,5 @@ deb http://dci.ds9.pub:8080/qt5 stable main
 deb http://dci.ds9.pub:8080/backports stable main
 deb http://dci.ds9.pub:8080/netrunner stable main
 deb http://dci.ds9.pub:8080/netrunner-core stable main
+deb http://dci.ds9.pub:8080/owncloud stable main
 deb http://dci.ds9.pub:8080/extras stable main
