@@ -16,15 +16,15 @@ export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 arch=$(dpkg-architecture -qDEB_HOST_ARCH)
 PKGLIST="customization/package-lists/netrunner-core.list.chroot"
 
-if [ "$arch" == "amd64" ]; then
-    FMT="iso-hybrid"
-    echo "netrunner-core" >> $PKGLIST
-    echo "calamares" >> $PKGLIST
-else
+if [ "$arch" == "armhf" ]; then
     FMT="tar"
     OTHER_OPTS="--linux-flavours none --linux-packages none --chroot-filesystem none --binary-filesystem ext4"
     echo "netrunner-core-arm" >> $PKGLIST
     echo "calamares-post" >> $PKGLIST
+else
+    FMT="iso-hybrid"
+    echo "netrunner-core" >> $PKGLIST
+    echo "calamares" >> $PKGLIST
 fi
 
 echo "I: Format is $FMT"
