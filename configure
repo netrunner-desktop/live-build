@@ -32,7 +32,7 @@ echo "I: Format is $FMT"
 lb config \
  --archive-areas 'main contrib non-free' \
  --backports true \
- --distribution stable \
+ --distribution jessie \
  --binary-images $FMT \
  --bootappend-live "boot=live hostname=live-pc username=live" \
  --mode debian \
