@@ -72,6 +72,19 @@ EOF
 
 	chmod a+x "/home/${LIVE_USERNAME}/Desktop/calamares.desktop"
 	chown -R ${LIVE_USERNAME}:${LIVE_USERNAME}  "/home/${LIVE_USERNAME}/Desktop"
+
+	# Configure settings depending on architecture
+	ARCH=$(dpkg-architecture -qDEB_HOST_ARCH)
+	if [ "${ARCH}" == "armhf" ]
+	then
+		sed -i -e 's/@TERMINAL_RESIZE@/interactiveterminal@resize/g' \
+		       -e 's/@CHROOT@/true/g' \
+					 /etc/calamares/settings.conf
+	else
+		sed -i -e '/@TERMINAL_RESIZE@/d' \
+		       -e '/@CHROOT@/d' \
+					  /etc/calamares/settings.conf
+	fi
 	# Creating state file
 	touch /var/lib/live/config/calamares
 }
