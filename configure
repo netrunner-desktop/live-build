@@ -20,11 +20,9 @@ if [ "$arch" == "armhf" ]; then
     FMT="tar"
     OTHER_OPTS="--linux-flavours none --linux-packages none --chroot-filesystem none --binary-filesystem ext4"
     echo "netrunner-core-arm" >> $PKGLIST
-    echo "calamares-post" >> $PKGLIST
 else
     FMT="iso-hybrid"
     echo "netrunner-core" >> $PKGLIST
-    echo "calamares" >> $PKGLIST
 fi
 
 echo "I: Format is $FMT"
