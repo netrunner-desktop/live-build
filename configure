@@ -26,7 +26,7 @@ else
 fi
 
 # Set name for image file
-export LIVE_IMAGE_NAME="netrunner-core_$(date +%Y%m.%H%M)"
+export LIVE_IMAGE_NAME="netrunner-debian-core_$(date +%Y%m.%H%M)"
 
 echo "I: Format is $FMT"
 
