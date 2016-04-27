@@ -75,13 +75,9 @@ EOF
 		ARCH=$(dpkg-architecture -qDEB_HOST_ARCH)
 		if [ "${ARCH}" = "armhf" ]
 		then
-			sed -i -e 's/@TERMINAL_RESIZE@/interactiveterminal@resize/g' \
-						 -e 's/@CHROOT@/true/g' \
-						 /etc/calamares/settings.conf
+			cp /etc/calamares/settings.conf.armhf /etc/calamares/settings.conf
 		else
-			sed -i -e '/@TERMINAL_RESIZE@/d' \
-						 -e '/@CHROOT@/d' \
-							/etc/calamares/settings.conf
+			cp /etc/calamares/settings.conf.amd64 /etc/calamares/settings.conf
 		fi
 	fi
 	# Creating state file
