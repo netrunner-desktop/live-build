@@ -75,9 +75,9 @@ EOF
 		ARCH=$(dpkg-architecture -qDEB_HOST_ARCH)
 		if [ "${ARCH}" = "armhf" ]
 		then
-			cp /etc/calamares/settings.conf.armhf /etc/calamares/settings.conf
+			ln -s /etc/calamares/settings.conf.armhf /etc/calamares/settings.conf
 		else
-			cp /etc/calamares/settings.conf.amd64 /etc/calamares/settings.conf
+			ln -s /etc/calamares/settings.conf.amd64 /etc/calamares/settings.conf
 		fi
 	fi
 	# Creating state file
