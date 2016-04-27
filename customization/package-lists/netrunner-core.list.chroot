@@ -1,1 +1,9 @@
+#if ARCHITECTURES armhf
+netrunner-core-arm
+#endif
+
+#if ARCHITECTURES amd64
+netrunner-core
+#endif
+
 calamares-core
