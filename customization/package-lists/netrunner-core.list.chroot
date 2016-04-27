@@ -1,3 +1,6 @@
+phonon4qt5-backend-gstreamer
+phonon-backend-gstreamer
+
 #if ARCHITECTURES armhf
 netrunner-core-arm
 #endif
