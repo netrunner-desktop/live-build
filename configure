@@ -41,7 +41,7 @@ lb config \
  --updates false \
  --apt-source-archives false \
  --source false \
- --apt-options "--yes -o Debug::pkgProblemResolver=true" \
+ --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
  $OTHER_OPTS
 
 echo "I: copy customization"
