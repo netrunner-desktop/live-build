@@ -1,0 +1,13 @@
+label live-@FLAVOUR@
+	menu label ^Start Netrunner Debian Live (@FLAVOUR@)
+	menu default
+        linux @LINUX@
+        initrd @INITRD@
+        append @APPEND_LIVE@
+
+label live-@FLAVOUR@-failsafe
+	menu label ^Start Netrunner Debian Live (@FLAVOUR@ failsafe)
+        linux @LINUX@
+        initrd @INITRD@
+        append @APPEND_LIVE_FAILSAFE@
+
