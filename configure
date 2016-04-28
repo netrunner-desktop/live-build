@@ -32,7 +32,7 @@ lb config \
  --backports true \
  --distribution stable \
  --binary-images $FMT \
- --bootappend-live "boot=live hostname=live-pc username=live" \
+ --bootappend-live "boot=live hostname=live-pc username=live quiet splash" \
  --mode debian \
  --security false \
  --updates false \
