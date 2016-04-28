@@ -7,6 +7,7 @@ netrunner-core-arm
 
 #if ARCHITECTURES amd64
 netrunner-core
+squashfs-tools
 #endif
 
 calamares-core
