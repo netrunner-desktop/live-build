@@ -13,4 +13,5 @@ calamares-core
 
 #if ARCHITECTURES armhf
 squashfs-tools-
+grub-pc-
 #endif
