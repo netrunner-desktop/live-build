@@ -15,3 +15,5 @@ calamares-core
 squashfs-tools-
 grub-pc-
 #endif
+
+muon-updater-
