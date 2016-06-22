@@ -1,0 +1,2 @@
+echo "I: Sed'ing out kcm-about-extendedrc"
+sed -i 's,@@BUILD_VERSION@@,@@_VER_@@,g' /etc/xdg/kcm-about-extendedrc
