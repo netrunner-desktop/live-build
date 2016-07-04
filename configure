@@ -25,7 +25,7 @@ lb config \
  -k "amd64-unsigned" \
  --linux-packages "linux-image-4.7.0-0.bpo.1" \
  --backports true \
- --distribution stable \
+ --distribution jessie \
  --binary-images iso-hybrid \
  --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} quiet splash" \
  --mode debian \
