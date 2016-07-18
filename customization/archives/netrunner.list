@@ -7,7 +7,7 @@ deb http://dci.ds9.pub:8080/netrunner-core @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/extras @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/calamares @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/kde-applications @DISTRIBUTION@ main
-deb http://dci.ds9.pub:8080/ds9-common-settings @DISTRIBUTION@ main
+deb http://dci.ds9.pub:8080/ds9-common @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/ds9-artwork @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/plasmazilla @DISTRIBUTION@ main
 
