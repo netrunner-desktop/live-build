@@ -16,7 +16,7 @@ export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
 # Set name for image file
-export LIVE_IMAGE_NAME="netrunner-desktop-$VER-dev"
+export LIVE_IMAGE_NAME="netrunner-core_$VER"
 
 _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
 
