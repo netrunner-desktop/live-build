@@ -19,7 +19,7 @@ arch=$(dpkg-architecture -qDEB_HOST_ARCH)
 VER=$(date +%Y%m%d.%H%M)
 DAY=$(date +%Y%m%d)
 # Set name for image file
-export LIVE_IMAGE_NAME="netrunner-core_$VER"
+export LIVE_IMAGE_NAME="netrunner-core-dev_$VER"
 
 lb config \
  --archive-areas 'main contrib non-free' \
