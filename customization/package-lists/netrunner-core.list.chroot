@@ -1,8 +1,6 @@
 phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
 e2fsprogs/jessie-backports
-linux-image-amd64/jessie-backports
-libgl1-mesa-glx/jessie-backports
 
 netrunner-core
 calamares-core
