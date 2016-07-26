@@ -1,7 +1,0 @@
-Package: *mesa*
-Pin: release a=jessie-backports
-Pin-Priority: 1000
-
-Package: libdrm2
-Pin: release a=jessie-backports
-Pin-Priority: 1000
