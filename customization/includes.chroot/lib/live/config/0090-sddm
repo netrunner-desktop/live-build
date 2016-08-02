@@ -46,6 +46,14 @@ Config ()
 	then
 		# autologin
 		cat > /etc/sddm.conf << EOF
+[Theme]
+Current=netrunner-core
+CursorTheme=windows
+
+[Users]
+MaximumUid=65000
+MinimumUid=500
+
 [Autologin]
 User=$LIVE_USERNAME
 Session=plasma.desktop
