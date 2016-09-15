@@ -45,15 +45,7 @@ Config ()
 	if [ "${LIVE_CONFIG_NOAUTOLOGIN}" != "true" ] && [ "${LIVE_CONFIG_NOX11AUTOLOGIN}" != "true" ]
 	then
 		# autologin
-		cat > /etc/sddm.conf << EOF
-[Theme]
-Current=netrunner-core
-CursorTheme=windows
-
-[Users]
-MaximumUid=65000
-MinimumUid=500
-
+		cat >> /etc/sddm.conf << EOF
 [Autologin]
 User=$LIVE_USERNAME
 Session=plasma.desktop
