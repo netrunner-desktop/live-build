@@ -23,6 +23,7 @@ export LIVE_IMAGE_NAME="netrunner-core-$VER-dev"
 
 lb config \
  --archive-areas 'main contrib non-free' \
+ --linux-packages "linux-image-4.7.0" \
  --backports true \
  --distribution stable \
  --binary-images iso-hybrid \
