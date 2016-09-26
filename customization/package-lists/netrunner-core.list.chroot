@@ -2,6 +2,9 @@ phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
 e2fsprogs/jessie-backports
 
+irqbalance
+linux-base/jessie-backports
+
 netrunner-core
 calamares-core
 
