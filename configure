@@ -13,8 +13,6 @@ set -x
 echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
-arch=$(dpkg-architecture -qDEB_HOST_ARCH)
-
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
 DAY=$(date +%Y%m%d)
