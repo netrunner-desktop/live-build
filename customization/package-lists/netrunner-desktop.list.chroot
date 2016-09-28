@@ -5,7 +5,7 @@ e2fsprogs/jessie-backports
 irqbalance
 linux-base/jessie-backports
 
-netrunner-core
+netrunner-desktop
 calamares-core
 
 muon-updater-

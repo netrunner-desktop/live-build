@@ -10,4 +10,4 @@ deb http://dci.ds9.pub:8080/kde-applications @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/ds9-common @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/ds9-artwork @DISTRIBUTION@ main
 deb http://dci.ds9.pub:8080/plasmazilla @DISTRIBUTION@ main
-
+deb http://dci.ds9.pub:8080/netrunner-desktop @DISTRIBUTION@ main
