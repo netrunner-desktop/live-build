@@ -17,7 +17,7 @@ export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 VER=$(date +%Y%m%d.%H%M)
 DAY=$(date +%Y%m%d)
 # Set name for image file
-export LIVE_IMAGE_NAME="netrunner-core-$VER-dev"
+export LIVE_IMAGE_NAME="netrunner-desktop-$VER-dev"
 
 lb config \
  --archive-areas 'main contrib non-free' \
