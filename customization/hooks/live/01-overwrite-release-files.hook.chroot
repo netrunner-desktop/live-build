@@ -1,5 +1,2 @@
 echo "I: Sed'ing out kcm-about-extendedrc"
 sed -i 's,@@BUILD_VERSION@@,@@_VER_@@,g' /etc/xdg/kcm-about-extendedrc
-
-echo "I: WARNING!!! FIXME IN THE FUTURE!"
-sed -i 's,org.kde.netrunner-core.desktop,org.kde.netrunner-desktop.desktop,g' /usr/share/default-settings/plasma5-profile/kdeglobals
