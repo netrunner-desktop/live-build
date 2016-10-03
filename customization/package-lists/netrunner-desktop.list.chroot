@@ -7,7 +7,7 @@ irqbalance
 linux-base/jessie-backports
 
 netrunner-desktop
-calamares-core
+calamares-desktop
 
 muon-updater-
 muon-notifier-
