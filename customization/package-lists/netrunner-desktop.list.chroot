@@ -2,6 +2,7 @@ zlib1g:i386
 phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
 e2fsprogs/jessie-backports
+libav-tools/jessie-backports
 
 irqbalance
 linux-base/jessie-backports
