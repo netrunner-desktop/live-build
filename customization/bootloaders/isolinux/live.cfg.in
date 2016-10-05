@@ -1,12 +1,12 @@
 label live-@FLAVOUR@
-	menu label ^Start Netrunner Core Live (@FLAVOUR@)
+	menu label ^Start Netrunner Desktop Live (@FLAVOUR@)
 	menu default
         linux @LINUX@
         initrd @INITRD@
         append @APPEND_LIVE@
 
 label live-@FLAVOUR@-failsafe
-	menu label ^Start Netrunner Core Live (@FLAVOUR@ failsafe)
+	menu label ^Start Netrunner Desktop Live (@FLAVOUR@ failsafe)
         linux @LINUX@
         initrd @INITRD@
         append @APPEND_LIVE_FAILSAFE@
