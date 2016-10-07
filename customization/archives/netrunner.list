@@ -3,7 +3,6 @@ deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasma netr
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/qt5 netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/backports netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner netrunner-1609 main
-deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-core netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/extras netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/calamares netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/kde-applications netrunner-1609 main
