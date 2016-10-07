@@ -10,4 +10,5 @@ deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/kde-applica
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-common netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-artwork netrunner-1609 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasmazilla netrunner-1609 main
+deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-desktop netrunner-1609 main
 
