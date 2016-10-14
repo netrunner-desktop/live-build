@@ -4,6 +4,11 @@ phonon-backend-gstreamer
 e2fsprogs/jessie-backports
 libav-tools/jessie-backports
 pulseaudio/jessie-backports
+libpulse0/jessie-backports
+pulseaudio-utils/jessie-backports
+pulseaudio-module-x11/jessie-backports
+libpulsedsp/jessie-backports
+libpulse-mainloop-glib0/jessie-backports
 
 irqbalance
 linux-base/jessie-backports
