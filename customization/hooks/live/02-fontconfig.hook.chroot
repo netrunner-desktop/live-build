@@ -1,4 +1,4 @@
 echo "Installing fontconfig:i386 once to generate cache"
-apt install fontconfig:i386
+apt-get -y install fontconfig:i386
 echo "Installing the regular fontconfig back again"
-apt install fontconfig
+apt-get -y install fontconfig
