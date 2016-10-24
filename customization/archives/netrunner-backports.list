@@ -1,0 +1,13 @@
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/frameworks jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasma jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/qt5 jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/backports jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/extras jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/calamares jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/kde-applications jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-common jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-artwork jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasmazilla jessie-backports main
+# deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-desktop jessie-backports main
+
