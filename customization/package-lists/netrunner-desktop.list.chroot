@@ -12,6 +12,9 @@ libpulse-mainloop-glib0/jessie-backports
 
 irqbalance
 linux-base/jessie-backports
+firmware-linux/jessie-backports
+firmware-linux-nonfree/jessie-backports
+firmware-misc-nonfree/jessie-backports
 
 netrunner-desktop
 calamares-desktop
