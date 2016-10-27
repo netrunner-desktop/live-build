@@ -19,6 +19,8 @@ DAY=$(date +%Y%m%d)
 # Set name for image file
 export LIVE_IMAGE_NAME="netrunner-desktop-$VER-dev"
 
+_GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
+
 lb config \
  --archive-areas 'main contrib non-free' \
  -k "amd64-unsigned" \
@@ -26,7 +28,7 @@ lb config \
  --backports true \
  --distribution stable \
  --binary-images iso-hybrid \
- --bootappend-live "boot=live hostname=live-pc username=live quiet splash" \
+ --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} quiet splash" \
  --mode debian \
  --security false \
  --updates false \
