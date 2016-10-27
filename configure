@@ -35,7 +35,8 @@ lb config \
  --apt-source-archives false \
  --source false \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
- $OTHER_OPTS
+ --firmware-chroot  false \
+ $@
 
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
