@@ -15,6 +15,10 @@ linux-base/jessie-backports
 firmware-linux/jessie-backports
 firmware-linux-nonfree/jessie-backports
 firmware-misc-nonfree/jessie-backports
+firmware-brcm80211/jessie-backports
+firmware-intel-sound/jessie-backports
+firmware-iwlwifi/jessie-backports
+firmware-atheros/jessie-backports
 
 netrunner-desktop
 calamares-desktop
