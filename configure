@@ -15,7 +15,6 @@ export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
-DAY=$(date +%Y%m%d)
 # Set name for image file
 export LIVE_IMAGE_NAME="netrunner-desktop-$VER-dev"
 
@@ -36,6 +35,7 @@ lb config \
  --source false \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
  --firmware-chroot  false \
+ --iso-volume "Netrunner Desktop ${VER}" \
  $@
 
 echo "I: copy customization"
