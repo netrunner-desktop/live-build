@@ -1,0 +1,2 @@
+echo $PWD
+ls -la
