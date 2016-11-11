@@ -9,6 +9,7 @@ pulseaudio-utils/jessie-backports
 pulseaudio-module-x11/jessie-backports
 libpulsedsp/jessie-backports
 libpulse-mainloop-glib0/jessie-backports
+virtualbox/jessie-backports
 
 irqbalance
 linux-base/jessie-backports
