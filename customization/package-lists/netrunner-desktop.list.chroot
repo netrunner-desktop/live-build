@@ -11,6 +11,7 @@ libpulsedsp/jessie-backports
 libpulse-mainloop-glib0/jessie-backports
 virtualbox/jessie-backports
 virtualbox-dkms/jessie-backports
+virtualbox-qt/jessie-backports
 
 irqbalance
 linux-base/jessie-backports
