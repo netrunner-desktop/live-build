@@ -36,6 +36,7 @@ lb config \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
  --firmware-chroot  false \
  --iso-volume "Netrunner Desktop ${VER}" \
+ --cache false \
  $@
 
 echo "I: copy customization"
