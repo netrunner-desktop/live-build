@@ -123,12 +123,6 @@ Config ()
 
 			if [ -z "${LIVE_XORG_DRIVER}" ]
 			then
-				# xorg-driver automatic override for virtualbox
-				if [ -e /var/lib/dpkg/info/virtualbox-guest-x11.list ] && echo "${_DEVICE}" | grep -qs '^80EEBEEF'
-				then
-					LIVE_XORG_DRIVER="vboxvideo"
-				fi
-
 				# xorg-driver automatic override for fglrx
 				if echo "${_DEVICE}" | grep -qs '^1002'
 				then
