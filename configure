@@ -33,7 +33,7 @@ lb config \
  --updates false \
  --apt-source-archives false \
  --source false \
- --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
+ --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -t jessie-backports" \
  --firmware-chroot  false \
  --iso-volume "Netrunner Desktop ${VER}" \
  $@
