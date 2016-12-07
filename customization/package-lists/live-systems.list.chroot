@@ -1,4 +1,4 @@
 live-manual
 live-tools
-live-boot/jessie-backports
-live-boot-initramfs-tools/jessie-backports
+live-boot
+live-boot-initramfs-tools

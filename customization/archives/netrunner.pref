@@ -1,3 +1,0 @@
-Package: *
-Pin: release n=jessie-backports
-Pin-Priority: 500
