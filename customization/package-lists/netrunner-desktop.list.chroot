@@ -1,27 +1,6 @@
 zlib1g:i386
 phonon4qt5-backend-gstreamer
 phonon-backend-gstreamer
-e2fsprogs/jessie-backports
-libav-tools/jessie-backports
-pulseaudio/jessie-backports
-libpulse0/jessie-backports
-pulseaudio-utils/jessie-backports
-pulseaudio-module-x11/jessie-backports
-libpulsedsp/jessie-backports
-libpulse-mainloop-glib0/jessie-backports
-virtualbox/jessie-backports
-virtualbox-dkms/jessie-backports
-virtualbox-qt/jessie-backports
-
-irqbalance
-linux-base/jessie-backports
-firmware-linux/jessie-backports
-firmware-linux-nonfree/jessie-backports
-firmware-misc-nonfree/jessie-backports
-firmware-brcm80211/jessie-backports
-firmware-intel-sound/jessie-backports
-firmware-iwlwifi/jessie-backports
-firmware-atheros/jessie-backports
 
 netrunner-desktop
 calamares-desktop
