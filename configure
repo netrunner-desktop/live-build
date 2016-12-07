@@ -22,10 +22,8 @@ _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,
 
 lb config \
  --archive-areas 'main contrib non-free' \
- -k "amd64-unsigned" \
- --linux-packages "linux-image-4.7.0-0.bpo.1" \
  --backports true \
- --distribution stable \
+ --distribution testing \
  --binary-images iso-hybrid \
  --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} quiet splash" \
  --mode debian \
