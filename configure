@@ -19,10 +19,10 @@ VER=$(date +%Y%m%d.%H%M)
 export LIVE_IMAGE_NAME="netrunner-desktop-$VER-dev"
 
 _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
+SNAP_URL='http://snapshot.debian.org/archive/debian/20161130T215912Z/'
 
 lb config \
  --archive-areas 'main contrib non-free' \
- --backports true \
  --distribution testing \
  --binary-images iso-hybrid \
  --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} quiet splash" \
@@ -34,6 +34,12 @@ lb config \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false" \
  --iso-volume "Netrunner Desktop ${VER}" \
  --security false \
+ -m $SNAP_URL \
+ --parent-mirror-binary $SNAP_URL \
+ --mirror-bootstrap $SNAP_URL \
+ --mirror-chroot $SNAP_URL \
+ --mirror-binary $SNAP_URL \
+ --mirror-debian-installer $SNAP_URL \
  $@
 
 echo "I: copy customization"
