@@ -31,7 +31,7 @@ lb config \
  --updates false \
  --apt-source-archives false \
  --source false \
- --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true" \
+ --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false" \
  --firmware-chroot  false \
  --iso-volume "Netrunner Desktop ${VER}" \
  $@
