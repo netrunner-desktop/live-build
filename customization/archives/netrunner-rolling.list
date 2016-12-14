@@ -6,3 +6,5 @@
 #deb http://dci.ds9.pub:8080/plasmazilla netrunner-1701 main
 #deb http://dci.ds9.pub:8080/netrunner-desktop netrunner-1701 main
 #deb http://deb.debian.org/debian testing main contrib non-free
+#deb http://dci.ds9.pub:8080/frameworks netrunner-1701 main
+#deb http://dci.ds9.pub:8080/plasma netrunner-1701 main
