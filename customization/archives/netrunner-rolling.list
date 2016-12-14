@@ -1,0 +1,8 @@
+#deb http://dci.ds9.pub:8080/netrunner netrunner-1701 main
+#deb http://dci.ds9.pub:8080/extras netrunner-1701 main
+#deb http://dci.ds9.pub:8080/calamares netrunner-1701 main
+#deb http://dci.ds9.pub:8080/ds9-common netrunner-1701 main
+#deb http://dci.ds9.pub:8080/ds9-artwork netrunner-1701 main
+#deb http://dci.ds9.pub:8080/plasmazilla netrunner-1701 main
+#deb http://dci.ds9.pub:8080/netrunner-desktop netrunner-1701 main
+#deb http://deb.debian.org/debian testing main contrib non-free
