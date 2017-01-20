@@ -8,3 +8,4 @@
 #deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-desktop stretch-backports main
 #deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/frameworks stretch-backports main
 #deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasma stretch-backports main
+#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/backports stretch-backports main

@@ -7,3 +7,4 @@ deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasmazilla
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-desktop netrunner-1701 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/frameworks netrunner-1701 main
 deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasma netrunner-1701 main
+deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/backports netrunner-1701 main
