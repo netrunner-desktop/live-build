@@ -1,0 +1,3 @@
+libdvd-pkg      libdvd-pkg/post-invoke_hook-remove      boolean true
+libdvd-pkg      libdvd-pkg/post-invoke_hook-install     boolean true
+libdvd-pkg      libdvd-pkg/build        boolean true
