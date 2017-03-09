@@ -9,4 +9,3 @@ cat >> /etc/pam.d/sddm-autologin << EOF
 -session optional       pam_kwallet5.so auto_start
 EOF
 
-/usr/sbin/update-pepperflashplugin-nonfree --install --verbose
