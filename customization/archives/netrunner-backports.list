@@ -1,12 +1,1 @@
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/backports netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/calamares netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-artwork netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/ds9-common netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/extras netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/frameworks netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/kde-applications netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner-desktop netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasma netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/plasmazilla netrunner-backports main
-#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/qt5 netrunner-backports main
+#deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner netrunner-backports backports calamares ds9-artwork ds9-common extras frameworks kde-applications netrunner-desktop netrunner plasma plasmazilla qt5
