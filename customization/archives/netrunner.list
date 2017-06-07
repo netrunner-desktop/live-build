@@ -1,2 +1,2 @@
-deb http://ds9-eu.s3-website.eu-central-1.amazonaws.com/dci/packages/netrunner netrunner-1706 backports calamares ds9-artwork ds9-common extras frameworks kde-applications netrunner-desktop netrunner plasma plasmazilla qt5
+deb http://deb.netrunner.com/dci/packages/netrunner netrunner-1706 backports calamares ds9-artwork ds9-common extras frameworks kde-applications netrunner-desktop netrunner plasma plasmazilla qt5
 
