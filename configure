@@ -40,7 +40,7 @@ lb config \
  --mirror-chroot $SNAP_URL \
  --mirror-binary $SNAP_URL \
  --mirror-debian-installer $SNAP_URL \
- --debootstrap-options "--include apt-transport-https" \
+ --debootstrap-options "--include apt-transport-https,ca-certificates" \
  $@
 
 echo "I: copy customization"
