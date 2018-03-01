@@ -9,3 +9,4 @@ cat >> /etc/pam.d/sddm-autologin << EOF
 -session optional       pam_kwallet5.so auto_start
 EOF
 
+sed -i 's,notify-send,# notify-send,g' /etc/X11/Xsession.d/98vboxadd-xclient

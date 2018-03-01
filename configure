@@ -19,7 +19,7 @@ VER=$(date +%Y%m%d.%H%M)
 export LIVE_IMAGE_NAME="netrunner-$VER"
 
 _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
-SNAP_URL='http://snapshot.debian.org/archive/debian/20170904/'
+SNAP_URL='http://snapshot.debian.org/archive/debian/20180315/'
 
 lb config \
  --archive-areas 'main contrib non-free' \
@@ -40,7 +40,7 @@ lb config \
  --mirror-chroot $SNAP_URL \
  --mirror-binary $SNAP_URL \
  --mirror-debian-installer $SNAP_URL \
- --debootstrap-options "--include apt-transport-https,ca-certificates" \
+ --debootstrap-options "--include apt-transport-https,ca-certificates,gnupg2" \
  $@
 
 echo "I: copy customization"
