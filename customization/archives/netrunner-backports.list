@@ -1,1 +1,2 @@
-#deb http://deb.netrunner.com/dci/packages/netrunner netrunner-backports backports calamares ds9-artwork ds9-common extras frameworks kde-applications netrunner-desktop netrunner plasma plasmazilla qt5
+#deb http://dci.ds9.pub/netrunner netrunner-backports calamares ds9-artwork ds9-common extras netrunner-desktop netrunner plasmazilla qt5 nomad
+
