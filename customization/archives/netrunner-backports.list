@@ -1,2 +1,2 @@
-#deb http://dci.ds9.pub/netrunner netrunner-backports calamares ds9-artwork ds9-common extras netrunner-desktop netrunner plasmazilla qt5 nomad
+#deb http://dci.ds9.pub/netrunner netrunner-backports calamares ds9-artwork ds9-common extras netrunner-desktop netrunner plasmazilla qt5 nomad backports
 
