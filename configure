@@ -25,7 +25,7 @@ lb config \
  --archive-areas 'main contrib non-free' \
  --distribution testing \
  --binary-images iso-hybrid \
- --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} quiet splash" \
+ --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
  --mode debian \
  --security false \
  --updates false \
