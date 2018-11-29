@@ -1,0 +1,3 @@
+echo "I: Workaround linking libpythonqt for calamares"
+ln -s /usr/lib/x86_64-linux-gnu/libPythonQt-Qt5-Python3.7.so.3 /usr/lib/x86_64-linux-gnu/libPythonQt-Qt5-Python3.6.so.3
+ln -s /usr/lib/x86_64-linux-gnu/libPythonQt_QtAll-Qt5-Python3.7.so.3 /usr/lib/x86_64-linux-gnu/libPythonQt_QtAll-Qt5-Python3.6.so.3
