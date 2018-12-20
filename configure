@@ -20,7 +20,7 @@ export LIVE_IMAGE_NAME="netrunner-$VER"
 
 _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
 #SNAP_URL="http://snapshot.debian.org/archive/debian/$(date +%Y%m%d)/"
-SNAP_URL="http://snapshot.debian.org/archive/debian/20190101/"
+SNAP_URL="http://snapshot.debian.org/archive/debian/20191219/"
 
 lb config \
  --archive-areas 'main contrib non-free' \
