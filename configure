@@ -24,7 +24,7 @@ SNAP_URL="http://deb.netrunner.com/dci/packages/debian/"
 
 lb config \
  --archive-areas 'main contrib non-free' \
- --distribution testing \
+ --distribution netrunner-1901 \
  --binary-images iso-hybrid \
  --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
  --mode debian \
