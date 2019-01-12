@@ -20,11 +20,11 @@ export LIVE_IMAGE_NAME="netrunner-$VER"
 
 _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
 #SNAP_URL="http://snapshot.debian.org/archive/debian/$(date +%Y%m%d)/"
-SNAP_URL="http://deb.netrunner.com/dci/packages/debian"
+SNAP_URL="http://deb.netrunner.com/dci/packages/debian/netrunner-1901"
 
 lb config \
- --archive-areas 'main' \
- --distribution netrunner-1901 \
+ --archive-areas 'main contrib non-free' \
+ --distribution testing \
  --binary-images iso-hybrid \
  --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
  --mode debian \
