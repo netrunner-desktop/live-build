@@ -1,0 +1,3 @@
+echo "I: Disable apt-daily service for faster startup"
+systemctl mask apt-daily-upgrade
+systemctl mask apt-daily
