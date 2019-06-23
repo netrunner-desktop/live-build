@@ -1,9 +1,0 @@
-echo "I: Download and Install Software Properties Fix"
-mkdir -p /tmp/ssf
-wget http://de.archive.ubuntu.com/ubuntu/pool/main/s/software-properties/python3-software-properties_0.96.24.32.7_all.deb -O /tmp/ssf/python.deb
-wget http://de.archive.ubuntu.com/ubuntu/pool/main/s/software-properties/software-properties-common_0.96.24.32.7_all.deb -O /tmp/ssf/common.deb
-wget http://de.archive.ubuntu.com/ubuntu/pool/universe/s/software-properties/software-properties-kde_0.96.24.32.7_all.deb -O /tmp/ssf/kde.deb
-apt-get -y install /tmp/ssf/*.deb;
-apt-get install -y -f
-rm -r /tmp/ssf
-
