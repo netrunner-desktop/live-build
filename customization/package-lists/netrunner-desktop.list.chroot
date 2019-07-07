@@ -5,6 +5,9 @@ phonon-backend-gstreamer
 netrunner-desktop
 calamares-desktop
 
+firefox
+
+firefox-esr-
 muon-updater-
 muon-notifier-
 xserver-xorg-input-libinput-
