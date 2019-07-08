@@ -22,6 +22,9 @@ _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,
 #SNAP_URL="http://snapshot.debian.org/archive/debian/$(date +%Y%m%d)/"
 SNAP_URL="https://deb.debian.org/debian/"
 
+#libreoffice-help-en-us pulls in firefox-esr as a depends, we don't want this, we want firefox. So...
+apt-mark hold firefox-esr
+
 lb config \
  --archive-areas 'main contrib non-free' \
  --distribution testing \
