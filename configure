@@ -24,7 +24,7 @@ SNAP_URL="https://deb.debian.org/debian/"
 
 lb config \
  --archive-areas 'main contrib non-free' \
- --distribution testing \
+ --distribution buster \
  --binary-images iso-hybrid \
  --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
  --mode debian \
