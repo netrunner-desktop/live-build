@@ -1,2 +1,2 @@
-#deb http://deb.netrunner.com/dci/packages/netrunner netrunner-desktop-1908 calamares ds9-artwork ds9-common extras netrunner-desktop netrunner backports
-deb http://dci.ds9.pub/netrunner netrunner-next calamares ds9-artwork ds9-common extras netrunner-desktop netrunner backports
+deb http://deb.netrunner.com/dci/packages/netrunner netrunner-desktop-1908 calamares ds9-artwork ds9-common extras netrunner-desktop netrunner backports
+#deb http://dci.ds9.pub/netrunner netrunner-next calamares ds9-artwork ds9-common extras netrunner-desktop netrunner backports
