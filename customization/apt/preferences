@@ -1,0 +1,39 @@
+Package: fonts-noto
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-hinted
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-unhinted
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-ui-extra
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-ui-core
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-mono
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-extra
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-color-emoji
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-cjk-extra
+Pin: version *
+Pin-Priority: -1
+
+Package: fonts-noto-cjk
+Pin: version *
+Pin-Priority: -1
