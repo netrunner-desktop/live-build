@@ -1,0 +1,39 @@
+#!/bin/sh
+
+## live-config(7) - System Configuration Components
+## Copyright (C) 2006-2015 Daniel Baumann <mail@daniel-baumann.ch>
+##
+## This program comes with ABSOLUTELY NO WARRANTY; for details see COPYING.
+## This is free software, and you are welcome to redistribute it
+## under certain conditions; see COPYING for details.
+
+set -e
+
+Cmdline ()
+{
+	# Reading kernel command line
+	for _PARAMETER in ${LIVE_CONFIG_CMDLINE}
+	do
+		case "${_PARAMETER}" in
+			live-config.username=*|username=*)
+				LIVE_USERNAME="${_PARAMETER#*username=}"
+				;;
+		esac
+	done
+}
+
+Init ()
+{
+	echo "I: Fix /var/cache/apt/archives/partial perms"
+}
+
+Config ()
+{
+  # Fix /var/cache/apt/archives/partial perms
+
+  chown _apt /var/cache/apt/archives/partial
+}
+
+Cmdline
+Init
+Config
