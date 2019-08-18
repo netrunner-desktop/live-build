@@ -10,3 +10,7 @@ cat >> /etc/pam.d/sddm-autologin << EOF
 EOF
 
 #sed -i 's,notify-send,# notify-send,g' /etc/X11/Xsession.d/98vboxadd-xclient
+
+# Fix /var/cache/apt/archives/partial perms
+echo "I: Fix /var/cache/apt/archives/partial perms"
+chown _apt /var/cache/apt/archives/partial
