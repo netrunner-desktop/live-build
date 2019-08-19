@@ -32,6 +32,7 @@ Config ()
   # Fix /var/cache/apt/archives/partial perms
   if [ ! -d /var/cache/apt/archives/partial ]; then
     sudo mkdir -p /var/cache/apt/archives/partial
+    sudo chown _apt /var/cache/apt/archives/partial
   else
     sudo chown _apt /var/cache/apt/archives/partial
   fi
