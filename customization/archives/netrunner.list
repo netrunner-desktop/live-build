@@ -1,1 +1,1 @@
-deb http://deb.netrunner.com/dci/packages/netrunner netrunner-2001 calamares-2001 ds9-artwork-2001 ds9-common-2001 extras-2001 netrunner-desktop-2001 netrunner-2001
+deb http://deb.netrunner.com/dci/packages/netrunner netrunner-2001 calamares ds9-artwork ds9-common extras netrunner-desktop netrunner
