@@ -10,6 +10,7 @@ linux-headers-5.9.0-0.bpo.2-amd64/buster-backports
 
 linux-image-4.19.*-
 
+crda-
 muon-updater-
 muon-notifier-
 sddm-theme-debian-maui-
