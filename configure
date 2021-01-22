@@ -14,7 +14,7 @@ echo "I: create configuration"
 export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
 # Set Version
-VER=21.01
+VER=$(date +%Y%m%d.%H%M)
 # Set name for image file
 export LIVE_IMAGE_NAME="netrunner-$VER"
 
