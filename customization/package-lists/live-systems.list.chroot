@@ -1,4 +1,4 @@
 live-manual
 live-tools
-live-boot
-live-boot-initramfs-tools
+live-boot/buster-backports
+live-boot-initramfs-tools/buster-backports

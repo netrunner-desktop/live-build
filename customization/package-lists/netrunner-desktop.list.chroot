@@ -5,10 +5,7 @@ netrunner-desktop
 calamares-desktop
 
 linux-image-amd64/buster-backports
-linux-image-5.9.0-0.bpo.2-amd64/buster-backports
-linux-headers-5.9.0-0.bpo.2-amd64/buster-backports
-
-linux-image-4.19.*-
+linux-image-4.*/buster-
 
 crda-
 muon-updater-
