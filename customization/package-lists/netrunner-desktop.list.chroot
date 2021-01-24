@@ -5,9 +5,10 @@ netrunner-desktop
 calamares-desktop
 
 linux-image-amd64/buster-backports
-linux-image-4.*/buster-
+linux-headers-amd64/buster-backports
+linux-config-5.9/buster-backports
+linux-image-4.*-
 
-crda-
 muon-updater-
 muon-notifier-
 sddm-theme-debian-maui-

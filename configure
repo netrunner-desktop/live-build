@@ -11,7 +11,6 @@ set -e
 set -x
 
 echo "I: create configuration"
-export LB_BOOTSTRAP_INCLUDE="apt-transport-https gnupg initramfs-tools"
 
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
@@ -23,25 +22,28 @@ _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,
 SNAP_URL="https://deb.debian.org/debian/"
 
 lb config \
- --archive-areas 'main contrib non-free' \
+ --color \
+ --debug \
+ --verbose \
+ --archive-areas "main contrib non-free" \
  --distribution stable \
  --binary-images iso-hybrid \
- --bootappend-live "boot=live hostname=live-pc username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
+ --debootstrap-options "--include apt-transport-https,ca-certificates,gnupg,gnupg2,initramfs-tools" \
+ --bootappend-live "boot=live hostname=live-pc live-config.username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
  --mode debian \
  --security true \
  --updates true \
  --apt-source-archives false \
  --source false \
- --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false -o Acquire::Retries=10" \
+ --linux-packages "linux-image-5.9.0-0.bpo.5-amd64-unsigned" \
+ --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false -o AcquirRetries=10" \
  --iso-volume "Netrunner Desktop ${VER}" \
- -m $SNAP_URL \
  --parent-mirror-binary $SNAP_URL \
  --mirror-bootstrap $SNAP_URL \
  --mirror-chroot $SNAP_URL \
  --mirror-binary $SNAP_URL \
  --mirror-debian-installer $SNAP_URL \
- --debootstrap-options "--include apt-transport-https,ca-certificates,gnupg2" \
- $@
+ "${@}"
 
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/

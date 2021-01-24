@@ -1,2 +1,2 @@
-debconf steam steam/license note
+debconf steam/license note
 debconf steam/question select I AGREE
