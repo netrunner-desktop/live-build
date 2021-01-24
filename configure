@@ -9,6 +9,10 @@
 
 set -e
 set -x
+echo "I: copy customization"
+test -d customization && cp -rf customization/* config/
+
+sed -i "s,@@_VER_@@,${VER},g" config/hooks/live/01-overwrite-release-files.hook.chroot
 
 echo "I: create configuration"
 
@@ -44,10 +48,5 @@ lb config \
  --mirror-binary $SNAP_URL \
  --mirror-debian-installer $SNAP_URL \
  "${@}"
-
-echo "I: copy customization"
-test -d customization && cp -rf customization/* config/
-
-sed -i "s,@@_VER_@@,${VER},g" config/hooks/live/01-overwrite-release-files.hook.chroot
 
 echo "I: done"
