@@ -29,7 +29,7 @@ lb config \
  --distribution stable \
  --binary-images iso-hybrid \
  --debootstrap-options "--include apt-transport-https,ca-certificates,gnupg,gnupg2,initramfs-tools" \
- --bootappend-live "boot=live hostname=live-pc live-config.username=live live-config.user-default-groups=${_GROUPS} apparmor=0 quiet splash" \
+ --bootappend-live "boot=live hostname=live-pc live-config.username=live live-config.user-default-groups=${_GROUPS} quiet splash" \
  --mode debian \
  --security true \
  --updates true \
