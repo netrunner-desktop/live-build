@@ -23,7 +23,6 @@ _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,
 SNAP_URL="https://deb.debian.org/debian/"
 
 lb config \
- --color \
  --debug \
  --verbose \
  --archive-areas "main contrib non-free" \
