@@ -9,6 +9,8 @@ linux-headers-amd64/buster-backports
 linux-config-5.9/buster-backports
 linux-image-4.*-
 
+libreoffice/buster-backports
+
 muon-updater-
 muon-notifier-
 sddm-theme-debian-maui-
