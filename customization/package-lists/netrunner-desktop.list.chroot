@@ -37,6 +37,9 @@ firmware-ti-connectivity/buster-backports
 
 youtube-dl/buster-backports
 
+printer-driver-hpcups/buster-backports
+printer-driver-postscript-hp/buster-backports
+
 muon-updater-
 muon-notifier-
 xserver-xorg-input-libinput-
