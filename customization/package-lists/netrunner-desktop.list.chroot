@@ -33,6 +33,8 @@ firmware-samsung/buster-backports
 firmware-siano/buster-backports
 firmware-ti-connectivity/buster-backports
 
+youtube-dl/buster-backports
+
 muon-updater-
 muon-notifier-
 sddm-theme-debian-maui-
