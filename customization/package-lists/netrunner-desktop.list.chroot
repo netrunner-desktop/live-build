@@ -11,6 +11,7 @@ linux-image-4.*-
 
 libreoffice/buster-backports
 
+firmware-linux/buster-backports
 firmware-linux-nonfree/buster-backports
 firmware-atheros/buster-backports
 firmware-bnx2/buster-backports
@@ -37,6 +38,7 @@ youtube-dl/buster-backports
 
 printer-driver-hpcups/buster-backports
 printer-driver-postscript-hp/buster-backports
+libhpmud0/buster-backports
 
 muon-updater-
 muon-notifier-
