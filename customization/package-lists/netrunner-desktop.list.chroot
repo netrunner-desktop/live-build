@@ -11,8 +11,6 @@ linux-headers-5.9.0-0.bpo.2-amd64/buster-backports
 
 linux-image-4.19.*-
 
-libreoffice/buster-backports
-
 firmware-linux/buster-backports
 firmware-linux-nonfree/buster-backports
 firmware-atheros/buster-backports
