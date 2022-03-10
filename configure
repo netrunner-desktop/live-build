@@ -16,7 +16,7 @@ echo "I: create configuration"
 # Set Version
 VER=$(date +%Y%m%d.%H%M)
 # Set name for image file
-export LIVE_IMAGE_NAME="netrunner-$VER"
+export LIVE_IMAGE_NAME="netrunner-desktop-$VER"
 
 _GROUPS="sambashare,cdrom,floppy,audio,dip,video,plugdev,netdev,lpadmin,scanner,bluetooth,adm"
 #SNAP_URL="http://snapshot.debian.org/archive/debian/$(date +%Y%m%d)/"
