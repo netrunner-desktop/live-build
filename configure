@@ -35,7 +35,6 @@ lb config \
  --updates true \
  --apt-source-archives false \
  --source false \
- --linux-packages "linux-image-5.9.0-0.bpo.5" \
  --apt-options "--yes -o Debug::pkgProblemResolver=true -o Debug::pkgDepCache::AutoInstall=true -o Debug::pkgDepCache::Marker=true -o Acquire::Check-Valid-Until=false -o AcquirRetries=10" \
  --iso-volume "Netrunner Desktop ${VER}" \
  --parent-mirror-binary $SNAP_URL \
@@ -44,7 +43,7 @@ lb config \
  --mirror-binary $SNAP_URL \
  --mirror-debian-installer $SNAP_URL \
  $@
- 
+
 echo "I: copy customization"
 test -d customization && cp -rf customization/* config/
 
