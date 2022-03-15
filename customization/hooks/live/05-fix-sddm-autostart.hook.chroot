@@ -1,0 +1,4 @@
+echo "I: Fixing SDDM Autostart"
+sed -i 's,Conflicts=getty@tty1.service getty@tty7.service,Conflicts=getty@tty7.service,g' /lib/systemd/system/sddm.service
+sed -i 's,After=getty@tty1.service getty@tty7.service,After=getty@tty7.service,g' /lib/systemd/system/sddm.service
+
